@@ -1,0 +1,5 @@
+build:
+  client:
+    command: "cd frontend && npm install && npm run build"
+  server:
+    command: "cd backend && npm install && npm start"
