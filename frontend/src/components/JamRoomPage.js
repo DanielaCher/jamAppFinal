@@ -15,9 +15,9 @@ const JamRoomPage = () => {
     if (songTitle) {
       // Fetch the song details from the backend based on the title
       fetch(
-        `http://localhost:5000/search/song?title=${encodeURIComponent(
-          songTitle
-        )}`
+        `${
+          process.env.REACT_APP_SERVER_URL
+        }/search/song?title=${encodeURIComponent(songTitle)}`
       )
         .then((response) => {
           if (!response.ok) {

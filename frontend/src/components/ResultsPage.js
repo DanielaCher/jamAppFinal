@@ -17,7 +17,11 @@ const ResultsPage = ({ socket }) => {
 
     if (query) {
       // Fetch data based on the query
-      fetch(`http://localhost:5000/search?query=${encodeURIComponent(query)}`)
+      fetch(
+        `${process.env.REACT_APP_SERVER_URL}/search?query=${encodeURIComponent(
+          query
+        )}`
+      )
         .then((response) => response.json())
         .then((data) => setResults(data))
         .catch((err) => console.error("Error fetching data:", err));

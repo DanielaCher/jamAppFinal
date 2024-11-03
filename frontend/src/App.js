@@ -4,7 +4,7 @@ import "./global.css";
 import AppRoutes from "./AppRoutes";
 import io from "socket.io-client";
 import { useEffect } from "react";
-const socket = io.connect("http://localhost:5000"); //TODO: make a serever path var to controll path changing more easely
+const socket = io.connect(process.env.REACT_APP_SERVER_URL); //TODO: make a serever path var to controll path changing more easely
 
 function App() {
   //for the socket
