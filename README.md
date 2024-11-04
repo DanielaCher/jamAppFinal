@@ -1,4 +1,6 @@
 Rehearsal Room Web Application 🎶
+
+
 The Rehearsal Room web application enables musicians to collaborate in real-time, creating virtual rehearsal spaces for seamless music practice. Musicians can join as users, specify their instruments, and enjoy a dynamic rehearsal environment, with the added benefit of real-time control and display of music materials for all participants.
 
 Key Features
